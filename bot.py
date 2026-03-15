@@ -92,7 +92,6 @@ def build_question_text(phrase: dict, task_type: str, num: int, total: int) -> s
     label = TASK_LABELS[task_type]
     lines = [
         f"<b>Задание {num}/{total}</b> · {label}",
-        f"📌 Фраза: <b>{phrase['phrase']}</b>",
         "",
     ]
     if task_type == "type_2":
