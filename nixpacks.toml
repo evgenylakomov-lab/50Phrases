@@ -1,9 +1,2 @@
 [phases.setup]
-nixPkgs = ["python310"]
-
-[phases.build]
-cmds = ["python3.10 -m pip install -r requirements.txt"]
-
-[start]
-cmd = "python3.10 bot.py"
-```
+nixPkgs = ["python311", "python311Packages.pip"]
