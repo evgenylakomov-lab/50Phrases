@@ -1,10 +1,6 @@
-# ============================================================
-#  config.py  —  Настройки бота
-#  Замени BOT_TOKEN на токен от @BotFather
-# ============================================================
+import os
 
-BOT_TOKEN = "8795471039:AAEgolgBfERFNJZUkg5IlFrRq4V-1pD2hog"
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
-# Время ежедневного пуш-уведомления (по Москве)
 PUSH_HOUR = 10
 PUSH_MINUTE = 0
